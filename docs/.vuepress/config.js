@@ -20,7 +20,7 @@ module.exports = {
   ],
   serviceWorker: true,
   themeConfig: {
-    repo: 'docschina/vuepress',
+    repo: 'KomeijiLogi/vueblog2',
     editLinks: true,
     docsDir: 'docs',
     locales: {
