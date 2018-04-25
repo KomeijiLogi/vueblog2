@@ -25,7 +25,6 @@ module.exports = {
     docsDir: 'docs',
     locales: {
       '/': {
-
         editLinkText: '在 GitHub 上编辑此页',
         nav: [
           {
@@ -56,14 +55,8 @@ function genSidebarConfig (title) {
       collapsable: false,
       children: [
         '',
-        'getting-started',
-        'basic-config',
-        'assets',
-        'markdown',
-        'using-vue',
-        'custom-themes',
-        'i18n',
-        'deploy'
+        'await-async',
+        'iconfont'
       ]
     }
   ]
