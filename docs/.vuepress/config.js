@@ -30,16 +30,16 @@ module.exports = {
         editLinkText: '在 GitHub 上编辑此页',
         nav: [
           {
-            text: '指南',
-            link: '/guide/',
+            text: '博客',
+            link: '/blog/',
           },
           {
-            text: '配置参考',
-            link: '/config/'
+            text: '项目',
+            link: '/project/'
           },
           {
-            text: '默认主题配置',
-            link: '/default-theme-config/'
+            text: '简介',
+            link: '/introduce/'
           }
         ],
         sidebar: {
