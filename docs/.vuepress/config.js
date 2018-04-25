@@ -60,6 +60,7 @@ function genSidebarConfig (title) {
         'jquery-fadein-out',
           'npm',
           'eventloop',
+          'pic',
       ]
     }
   ]
