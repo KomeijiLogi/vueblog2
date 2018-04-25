@@ -25,8 +25,7 @@ module.exports = {
     docsDir: 'docs',
     locales: {
       '/': {
-        label: '简体中文',
-        selectText: '选择语言',
+       
         editLinkText: '在 GitHub 上编辑此页',
         nav: [
           {
