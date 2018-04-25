@@ -58,6 +58,8 @@ function genSidebarConfig (title) {
         'await-async',
         'iconfont',
         'jquery-fadein-out',
+          'npm',
+          'eventloop',
       ]
     }
   ]
