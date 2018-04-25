@@ -3,7 +3,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'KoimeiJiLogi',
+      title: 'KomeijiLogi',
       description: 'to be an explorer of the code'
     }
   },
@@ -25,7 +25,7 @@ module.exports = {
     docsDir: 'docs',
     locales: {
       '/': {
-       
+
         editLinkText: '在 GitHub 上编辑此页',
         nav: [
           {
@@ -42,7 +42,7 @@ module.exports = {
           }
         ],
         sidebar: {
-          '/guide/': genSidebarConfig('指南')
+          '/guide/': genSidebarConfig('博客')
         }
       }
     }
