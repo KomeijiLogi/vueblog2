@@ -41,7 +41,7 @@ module.exports = {
           }
         ],
         sidebar: {
-          '/guide/': genSidebarConfig('博客')
+          '/blog/': genSidebarConfig('博客')
         }
       }
     }
@@ -56,7 +56,8 @@ function genSidebarConfig (title) {
       children: [
         '',
         'await-async',
-        'iconfont'
+        'iconfont',
+        'jquery-fadein-out',
       ]
     }
   ]
