@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>快速上手</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.26c9f124.css" as="style"><link rel="preload" href="/assets/js/app.d7535443.js" as="script"><link rel="preload" href="/assets/js/5.cbf77dd1.js" as="script"><link rel="prefetch" href="/assets/js/19.63666e88.js"><link rel="prefetch" href="/assets/js/1.2dd87b0c.js"><link rel="prefetch" href="/assets/js/2.41b742b4.js"><link rel="prefetch" href="/assets/js/3.107885ce.js"><link rel="prefetch" href="/assets/js/4.ef61a752.js"><link rel="prefetch" href="/assets/js/6.ac37814a.js"><link rel="prefetch" href="/assets/js/7.883f003b.js"><link rel="prefetch" href="/assets/js/8.87c8fbdd.js"><link rel="prefetch" href="/assets/js/9.924a397e.js"><link rel="prefetch" href="/assets/js/10.28be7813.js"><link rel="prefetch" href="/assets/js/11.cad4cd75.js"><link rel="prefetch" href="/assets/js/12.380231bc.js"><link rel="prefetch" href="/assets/js/13.3321a949.js"><link rel="prefetch" href="/assets/js/14.3c39b51d.js"><link rel="prefetch" href="/assets/js/15.58db3ee8.js"><link rel="prefetch" href="/assets/js/16.8cfe000d.js"><link rel="prefetch" href="/assets/js/17.dc747338.js"><link rel="prefetch" href="/assets/js/18.a37f241e.js"><link rel="prefetch" href="/assets/js/20.692e1e5d.js"><link rel="prefetch" href="/assets/js/21.0281bdfe.js"><link rel="prefetch" href="/assets/js/22.fa3584e4.js"><link rel="prefetch" href="/assets/js/23.fbffeb5f.js"><link rel="prefetch" href="/assets/js/24.9305c0ba.js"><link rel="prefetch" href="/assets/js/25.5136946c.js"><link rel="prefetch" href="/assets/js/26.e5a8219c.js"><link rel="prefetch" href="/assets/js/27.fb967872.js"><link rel="prefetch" href="/assets/js/28.b70016c1.js"><link rel="prefetch" href="/assets/js/29.8f8c9840.js"><link rel="prefetch" href="/assets/js/30.53bc9f00.js"><link rel="prefetch" href="/assets/js/31.a8d8e87d.js"><link rel="prefetch" href="/assets/js/32.cf584ce0.js"><link rel="prefetch" href="/assets/js/33.de740a10.js"><link rel="prefetch" href="/assets/js/34.608021c2.js"><link rel="prefetch" href="/assets/js/35.e8b44518.js"><link rel="prefetch" href="/assets/js/36.8829f2a2.js"><link rel="prefetch" href="/assets/js/37.2a8d3648.js"><link rel="prefetch" href="/assets/js/38.f8b3bbb7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.26c9f124.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><!----></div></header><div class="sidebar-mask"></div><div class="sidebar"><!----><!----></div><div class="page"><div class="content"><h1 id="快速上手"><a href="#快速上手" aria-hidden="true" class="header-anchor">#</a> 快速上手</h1><div class="warning custom-block"><p class="custom-block-title">注意</p><p>请确保你的 Node.js 版本 &gt;= 8。</p></div><h2 id="全局安装"><a href="#全局安装" aria-hidden="true" class="header-anchor">#</a> 全局安装</h2><p>如果你只是想尝试一下 VuePress，你可以全局安装它：</p><pre class="language-bash"><code><span class="token comment"># 安装</span>
+yarn global add vuepress <span class="token comment"># 或者：npm install -g vuepress</span>
+
+<span class="token comment"># 新建一个 markdown 文件</span>
+<span class="token keyword">echo</span> <span class="token string">&quot;# Hello VuePress!&quot;</span> <span class="token operator">&gt;</span> README.md
+
+<span class="token comment"># 开始写作</span>
+vuepress dev <span class="token keyword">.</span>
+
+<span class="token comment"># 构建静态文件</span>
+vuepress build <span class="token keyword">.</span>
+</code></pre><h2 id="现有项目"><a href="#现有项目" aria-hidden="true" class="header-anchor">#</a> 现有项目</h2><p>如果你想在一个现有项目中使用 VuePress，同时想要在该项目中管理文档，则应该将 VuePress 安装为本地依赖。作为本地依赖安装让你可以使用持续集成工具，或者一些其他服务（比如 Netlify）来帮助你在每次提交代码时自动部署。</p><pre class="language-bash"><code><span class="token comment"># 将 VuePress 作为一个本地依赖安装</span>
+yarn add -D vuepress <span class="token comment"># 或者：npm install -D vuepress</span>
+
+<span class="token comment"># 新建一个 docs 文件夹</span>
+<span class="token function">mkdir</span> docs
+
+<span class="token comment"># 新建一个 markdown 文件</span>
+<span class="token keyword">echo</span> <span class="token string">&quot;# Hello VuePress!&quot;</span> <span class="token operator">&gt;</span> docs/README.md
+
+<span class="token comment"># 开始写作</span>
+npx vuepress dev docs
+</code></pre><div class="warning custom-block"><p class="custom-block-title">WARNING</p><p>如果你的现有项目依赖了 webpack 3.x，推荐使用 <a href="https://yarnpkg.com/en/" target="_blank" rel="noopener noreferrer">Yarn</a> 而不是 npm 来安装 VuePress。因为在这种情形下，npm 会生成错误的依赖树。</p></div><p>接着，在 <code>package.json</code> 里加一些脚本:</p><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p>然后就可以开始写作了:</p><pre class="language-bash"><code>yarn docs:dev <span class="token comment"># 或者：npm run docs:dev</span>
+</code></pre><p>要生成静态的 HTML 文件，运行：</p><pre class="language-bash"><code>yarn docs:build <span class="token comment"># 或者：npm run docs:build</span>
+</code></pre><p>默认情况下，文件将会被生成在 <code>.vuepress/dist</code>，当然，你也可以通过 <code>.vuepress/config.js</code> 中的 <code>dest</code> 字段来修改，生成的文件可以部署到任意的静态文件服务器上，参考 <a href="/docs/zh/guide/deploy.html">部署</a> 来了解更多。</p></div><!----><!----></div></div></div>
+    <script src="/assets/js/5.cbf77dd1.js" defer></script><script src="/assets/js/app.d7535443.js" defer></script>
+  </body>
+</html>

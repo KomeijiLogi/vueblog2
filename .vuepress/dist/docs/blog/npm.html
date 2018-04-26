@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>npm使用的几个技巧</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.26c9f124.css" as="style"><link rel="preload" href="/assets/js/app.d7535443.js" as="script"><link rel="preload" href="/assets/js/28.b70016c1.js" as="script"><link rel="prefetch" href="/assets/js/19.63666e88.js"><link rel="prefetch" href="/assets/js/1.2dd87b0c.js"><link rel="prefetch" href="/assets/js/2.41b742b4.js"><link rel="prefetch" href="/assets/js/3.107885ce.js"><link rel="prefetch" href="/assets/js/4.ef61a752.js"><link rel="prefetch" href="/assets/js/5.cbf77dd1.js"><link rel="prefetch" href="/assets/js/6.ac37814a.js"><link rel="prefetch" href="/assets/js/7.883f003b.js"><link rel="prefetch" href="/assets/js/8.87c8fbdd.js"><link rel="prefetch" href="/assets/js/9.924a397e.js"><link rel="prefetch" href="/assets/js/10.28be7813.js"><link rel="prefetch" href="/assets/js/11.cad4cd75.js"><link rel="prefetch" href="/assets/js/12.380231bc.js"><link rel="prefetch" href="/assets/js/13.3321a949.js"><link rel="prefetch" href="/assets/js/14.3c39b51d.js"><link rel="prefetch" href="/assets/js/15.58db3ee8.js"><link rel="prefetch" href="/assets/js/16.8cfe000d.js"><link rel="prefetch" href="/assets/js/17.dc747338.js"><link rel="prefetch" href="/assets/js/18.a37f241e.js"><link rel="prefetch" href="/assets/js/20.692e1e5d.js"><link rel="prefetch" href="/assets/js/21.0281bdfe.js"><link rel="prefetch" href="/assets/js/22.fa3584e4.js"><link rel="prefetch" href="/assets/js/23.fbffeb5f.js"><link rel="prefetch" href="/assets/js/24.9305c0ba.js"><link rel="prefetch" href="/assets/js/25.5136946c.js"><link rel="prefetch" href="/assets/js/26.e5a8219c.js"><link rel="prefetch" href="/assets/js/27.fb967872.js"><link rel="prefetch" href="/assets/js/29.8f8c9840.js"><link rel="prefetch" href="/assets/js/30.53bc9f00.js"><link rel="prefetch" href="/assets/js/31.a8d8e87d.js"><link rel="prefetch" href="/assets/js/32.cf584ce0.js"><link rel="prefetch" href="/assets/js/33.de740a10.js"><link rel="prefetch" href="/assets/js/34.608021c2.js"><link rel="prefetch" href="/assets/js/35.e8b44518.js"><link rel="prefetch" href="/assets/js/36.8829f2a2.js"><link rel="prefetch" href="/assets/js/37.2a8d3648.js"><link rel="prefetch" href="/assets/js/38.f8b3bbb7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.26c9f124.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><!----></div></header><div class="sidebar-mask"></div><div class="sidebar"><!----><!----></div><div class="page"><div class="content"><h1 id="npm使用的几个技巧"><a href="#npm使用的几个技巧" aria-hidden="true" class="header-anchor">#</a> npm使用的几个技巧</h1><h2 id="删除文件"><a href="#删除文件" aria-hidden="true" class="header-anchor">#</a> 删除文件</h2><p>想删除node_modules文件夹,有时候会提示需要administrator权限，但是物理上给文件夹管理员权限不仅不容易成功，
+而且操作繁琐，其实google了一下，发现rimraf指令来删除文件夹就好操作多了</p><pre class="language-text"><code>  npm install rimraf -g   // 全局安装rimraf
+
+  rimraf node_modules    // 使用rimraf删除对应的node_modules文件夹
+</code></pre><h2 id="清楚缓存"><a href="#清楚缓存" aria-hidden="true" class="header-anchor">#</a> 清楚缓存</h2><p>npm安装依赖时，有时会失败，出现这样的问题</p><div class="danger custom-block"><p class="custom-block-title">WARNING</p><p>NPM ERR！Please try running this command again as root/Administrator.</p></div><p>然后安装依赖就会失败</p><pre class="language-text"><code>  npm cache clean -f  // 强制清除缓存
+
+  npm install         // 安装全部依赖
+</code></pre><p>清除缓存，然后再安装就可以解决问题</p></div><!----><!----></div></div></div>
+    <script src="/assets/js/28.b70016c1.js" defer></script><script src="/assets/js/app.d7535443.js" defer></script>
+  </body>
+</html>

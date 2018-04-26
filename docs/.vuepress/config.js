@@ -1,7 +1,10 @@
 module.exports = {
   dest: 'vuepress',
+  base:'/vue-blog/',
+  title: 'KomeijiLogi',
+  description: 'to be an explorer of the code',
   locales: {
-    '/': {
+    '/vue-blog/': {
       lang: 'zh-CN',
       title: 'KomeijiLogi',
       description: 'to be an explorer of the code'
@@ -20,7 +23,7 @@ module.exports = {
   ],
   serviceWorker: true,
   themeConfig: {
-    repo: 'KomeijiLogi/vueblog2',
+    repo: 'KomeijiLogi/vue-blog',
     editLinks: true,
     docsDir: 'docs',
     locales: {

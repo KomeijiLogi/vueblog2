@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>es7 中的await/async</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.26c9f124.css" as="style"><link rel="preload" href="/assets/js/app.d7535443.js" as="script"><link rel="preload" href="/assets/js/32.cf584ce0.js" as="script"><link rel="prefetch" href="/assets/js/19.63666e88.js"><link rel="prefetch" href="/assets/js/1.2dd87b0c.js"><link rel="prefetch" href="/assets/js/2.41b742b4.js"><link rel="prefetch" href="/assets/js/3.107885ce.js"><link rel="prefetch" href="/assets/js/4.ef61a752.js"><link rel="prefetch" href="/assets/js/5.cbf77dd1.js"><link rel="prefetch" href="/assets/js/6.ac37814a.js"><link rel="prefetch" href="/assets/js/7.883f003b.js"><link rel="prefetch" href="/assets/js/8.87c8fbdd.js"><link rel="prefetch" href="/assets/js/9.924a397e.js"><link rel="prefetch" href="/assets/js/10.28be7813.js"><link rel="prefetch" href="/assets/js/11.cad4cd75.js"><link rel="prefetch" href="/assets/js/12.380231bc.js"><link rel="prefetch" href="/assets/js/13.3321a949.js"><link rel="prefetch" href="/assets/js/14.3c39b51d.js"><link rel="prefetch" href="/assets/js/15.58db3ee8.js"><link rel="prefetch" href="/assets/js/16.8cfe000d.js"><link rel="prefetch" href="/assets/js/17.dc747338.js"><link rel="prefetch" href="/assets/js/18.a37f241e.js"><link rel="prefetch" href="/assets/js/20.692e1e5d.js"><link rel="prefetch" href="/assets/js/21.0281bdfe.js"><link rel="prefetch" href="/assets/js/22.fa3584e4.js"><link rel="prefetch" href="/assets/js/23.fbffeb5f.js"><link rel="prefetch" href="/assets/js/24.9305c0ba.js"><link rel="prefetch" href="/assets/js/25.5136946c.js"><link rel="prefetch" href="/assets/js/26.e5a8219c.js"><link rel="prefetch" href="/assets/js/27.fb967872.js"><link rel="prefetch" href="/assets/js/28.b70016c1.js"><link rel="prefetch" href="/assets/js/29.8f8c9840.js"><link rel="prefetch" href="/assets/js/30.53bc9f00.js"><link rel="prefetch" href="/assets/js/31.a8d8e87d.js"><link rel="prefetch" href="/assets/js/33.de740a10.js"><link rel="prefetch" href="/assets/js/34.608021c2.js"><link rel="prefetch" href="/assets/js/35.e8b44518.js"><link rel="prefetch" href="/assets/js/36.8829f2a2.js"><link rel="prefetch" href="/assets/js/37.2a8d3648.js"><link rel="prefetch" href="/assets/js/38.f8b3bbb7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.26c9f124.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><!----></div></header><div class="sidebar-mask"></div><div class="sidebar"><!----><!----></div><div class="page"><div class="content"><h1 id="es7-中的await-async"><a href="#es7-中的await-async" aria-hidden="true" class="header-anchor">#</a> es7 中的await/async</h1><p>在es2017中着重探讨了await/async 以及Decorator 装饰者模式,
+async异步函数可以看成是generator函数的语法糖(阮一峰老师语)</p><p>摘录的基本准则:</p><ol><li>async 表示这是一个async函数，await只能用在这个函数里面。</li><li>await 表示在这里等待promise返回结果了，再继续执行。</li><li>await 后面跟着的应该是一个promise对象</li></ol><ul><li><a href="https://cnodejs.org/topic/5640b80d3a6aa72c5e0030b6" target="_blank" rel="noopener noreferrer">摘录出处</a></li></ul><p>例子如下:</p><pre class="language-text"><code>var sleep = function (time) {
+
+    return new Promise(function (resolve, reject) {
+
+        setTimeout(function () {
+
+            resolve();
+        }, time);
+    })
+};
+
+var start = async function () {
+
+    console.log('start');
+    await sleep(3000);
+    console.log('end');
+};
+
+start();
+</code></pre><p>待续to be continue</p></div><!----><!----></div></div></div>
+    <script src="/assets/js/32.cf584ce0.js" defer></script><script src="/assets/js/app.d7535443.js" defer></script>
+  </body>
+</html>
