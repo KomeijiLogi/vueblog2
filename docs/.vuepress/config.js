@@ -64,6 +64,8 @@ function genSidebarConfig (title) {
           'npm',
           'eventloop',
           'pic',
+          'cache',
+
       ]
     }
   ]
