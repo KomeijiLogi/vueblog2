@@ -23,7 +23,7 @@ module.exports = {
   ],
   serviceWorker: true,
   themeConfig: {
-    repo: 'KomeijiLogi/vue-blog',
+    repo: 'KomeijiLogi/vueblog2',
     editLinks: true,
     docsDir: 'docs',
     locales: {
