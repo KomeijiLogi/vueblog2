@@ -65,7 +65,7 @@ function genSidebarConfig (title) {
           'eventloop',
           'pic',
           'cache',
-
+          'package',
       ]
     }
   ]
